@@ -1,21 +1,23 @@
-.x{
+/* Style général */
+.x {
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
   text-align: center;
   padding: 50px;
 }
 
-.g{
+.g {
   background-color: white;
   padding: 30px;
   border-radius: 30px;
   max-width: 500px;
   margin: auto;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.choix button {
-  font-size: 20px;
+/* Style des boutons */
+button {
+  font-size: 1.2rem;
   margin: 10px;
   padding: 15px 25px;
   border: none;
@@ -26,104 +28,91 @@
   transition: 0.3s;
 }
 
-.choix button:hover {
+button:hover {
   background-color: #388E3C;
 }
 
+/* Résultat */
 .resultat {
   margin-top: 20px;
   font-size: 20px;
 }
 
+/* Score */
 .score {
   margin-bottom: 20px;
 }
 
-#c{
-    border:2px solid red;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    justify-items: center;
-    background-color: aqua;
-
-    
+/* Bloc de choix */
+#c, #un {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: aqua;
 }
 
-
-.a{
- border: 2px solid green;
- width: 200px;
-height: 350px;
-margin: auto;
-     width:30%;  
-  display:inline-block;
-  
-}
-.b{
-border: 2px solid red;
-width: 200px;
-height: 350px;
-margin: auto;
-     width:30%;  
-  display:inline-block;
-
-}
-.d{
-    border: 2px solid yellow;
-    width: 200px;
-    height:350px;
-  margin: auto;
-     width:30%;  
-  display:inline-block;
-  
-}
-  #un{
-    border:2px solid black;
-    width: 100%;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    justify-items: center;
-    background-color: gainsboro;
-
-
-  }
-  #de{
-     border: 2px solid black;
-    width: 100px;
-    height:100px;
-  margin: auto;
-     width:30%;  
-  display:inline-block;
+/* Élément de choix */
+.a, .b, .d {
+  flex: 1;
+  min-width: 100px;
+  max-width: 250px;
+  height: auto;
+  box-sizing: border-box;
   background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
 
-  }
-  #tr{
-      border: 2px solid black;
-    width: 100px;
-    height:100px;
-  margin: auto;
-     width:30%;  
-  display:inline-block;
+/* Élément score joueur/ordi */
+#de, #tr {
+  flex: 1;
+  min-width: 120px;
+  max-width: 250px;
+  height: auto;
   background-color: white;
-  }
-  .fadi{
-   font-family: Arial, sans-serif;
+  padding: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Autre style */
+.fadi {
+  font-family: Arial, sans-serif;
   text-align: center;
   padding: 50px;
+}
+
+/* Responsive pour petits écrans */
+@media screen and (max-width: 768px) {
+  .a, .b, .d, #de, #tr {
+    width: 90%;
+    margin-bottom: 20px;
   }
-  button{
-    font-size: 1.2rem;
-  margin: 10px;
-  padding: 15px 25px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #4CAF50;
-  color: white;
-  
+
+  #c, #un {
+    flex-direction: column;
+    height: auto;
+    background-color: #e0f7fa;
   }
+
+  .x {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
