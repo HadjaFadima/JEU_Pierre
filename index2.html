@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="x">
+  <h1></h1>
+    <div id="un" class="score">
+
+      <div id="de"> 
+        <strong>JOUEUR</strong> 
+        <p>SCORE: <span id="joueur-score">0</span></p>
+
+      </div>
+      <div>
+        <img src="vS0.png" alt="">
+      </div>
+      <di id="tr"> 
+        <strong>ORDINATEUR</strong>
+        <p>SCORE: <span id="ordi-score">0</span></p>
+        <p id="orchoix"></p>
+      </div>
+    </div>
+    <br>
+     <div class="resultat">
+      <p id="message">Fais ton choix !</p>
+    </div>
+    <div>
+      <img id="img-resultat" src="" alt="" width="150">
+    </div>
+<div id="c" class="choix" >
+  <div class="a">
+    <button data-choice="pierre">Pierre</button>
+    <br><br>
+     <img src="pierre1.png" alt="img1">
+  </div>
+  
+  <div class="b">
+    <button data-choice="feuille">Feuille</button>
+    <br><br>
+     <img 
+    src="feuilles2.png" alt="img2">
+  </div>
+  
+  <div class="d">
+    <button data-choice="ciseaux">Ciseaux</button>
+    <br><br>
+     <img src="ciseaux2.png" alt="img3">
+  </div>
+
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>
