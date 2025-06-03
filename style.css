@@ -15,7 +15,7 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Boutons */
+/* Style des boutons */
 button {
   font-size: 1.2rem;
   margin: 10px;
@@ -43,39 +43,50 @@ button:hover {
   margin-bottom: 20px;
 }
 
-/* Section de choix */
-#c, #un {
+/* Bloc de choix */
+#c {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
   background-color: aqua;
+  padding: 20px;
+  flex-wrap: nowrap;
+  gap: 20px;
 }
 
-/* Cartes de choix */
+/* Élément de choix */
 .a, .b, .d {
-  width: 30%;
-  min-width: 150px;
+  flex: 1;
+  min-width: 100px;
   max-width: 250px;
-  background-color: white;
-  padding: 15px;
-  border-radius: 15px;
+  height: auto;
   box-sizing: border-box;
-  flex-grow: 1;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
 }
 
-/* Scores joueur/ordi */
+/* Bloc score VS */
+#un {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e0f7fa;
+  padding: 20px;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+/* Élément score joueur/ordi */
 #de, #tr {
-  width: 30%;
+  flex: 1;
   min-width: 120px;
   max-width: 250px;
+  height: auto;
   background-color: white;
   padding: 15px;
   border-radius: 10px;
   box-sizing: border-box;
-  flex-grow: 1;
 }
 
 /* Images */
@@ -84,35 +95,30 @@ img {
   height: auto;
 }
 
-/* Texte centré */
+/* Autre style */
 .fadi {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 50px;
 }
 
-/* Responsive mobile */
+/* Responsive : conservez l'alignement horizontal */
 @media screen and (max-width: 768px) {
+  .a, .b, .d, #de, #tr {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: auto;
+    padding: 10px 20px;
+  }
+
   .x {
     padding: 20px;
   }
 
   h1 {
     font-size: 1.5rem;
-  }
-
-  #c, #un {
-    flex-direction: column;
-    background-color: #e0f7fa;
-  }
-
-  .a, .b, .d, #de, #tr {
-    width: 90%;
-    margin: 10px auto;
-  }
-
-  button {
-    width: 100%;
-    padding: 15px;
   }
 }
