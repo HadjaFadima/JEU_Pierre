@@ -1,23 +1,21 @@
-/* Style général */
-.x {
+.x{
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
   text-align: center;
   padding: 50px;
 }
 
-.g {
+.g{
   background-color: white;
   padding: 30px;
   border-radius: 30px;
   max-width: 500px;
   margin: auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-/* Style des boutons */
-button {
-  font-size: 1.2rem;
+.choix button {
+  font-size: 20px;
   margin: 10px;
   padding: 15px 25px;
   border: none;
@@ -28,97 +26,104 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+.choix button:hover {
   background-color: #388E3C;
 }
 
-/* Résultat */
 .resultat {
   margin-top: 20px;
   font-size: 20px;
 }
 
-/* Score */
 .score {
   margin-bottom: 20px;
 }
 
-/* Bloc de choix */
-#c {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: aqua;
-  padding: 20px;
-  flex-wrap: nowrap;
-  gap: 20px;
+#c{
+    border:2px solid red;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: aqua;
+
+    
 }
 
-/* Élément de choix */
-.a, .b, .d {
-  flex: 1;
-  min-width: 100px;
-  max-width: 250px;
-  height: auto;
-  box-sizing: border-box;
+
+.a{
+ border: 2px solid green;
+ width: 200px;
+height: 350px;
+margin: auto;
+     width:30%;  
+  display:inline-block;
+  
+}
+.b{
+border: 2px solid red;
+width: 200px;
+height: 350px;
+margin: auto;
+     width:30%;  
+  display:inline-block;
+
+}
+.d{
+    border: 2px solid yellow;
+    width: 200px;
+    height:350px;
+  margin: auto;
+     width:30%;  
+  display:inline-block;
+  
+}
+  #un{
+    border:2px solid black;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: gainsboro;
+
+
+  }
+  #de{
+     border: 2px solid black;
+    width: 100px;
+    height:100px;
+  margin: auto;
+     width:30%;  
+  display:inline-block;
   background-color: white;
-  padding: 10px;
-  border-radius: 15px;
-}
 
-/* Bloc score VS */
-#un {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #e0f7fa;
-  padding: 20px;
-  flex-wrap: nowrap;
-  gap: 20px;
-}
-
-/* Élément score joueur/ordi */
-#de, #tr {
-  flex: 1;
-  min-width: 120px;
-  max-width: 250px;
-  height: auto;
+  }
+  #tr{
+      border: 2px solid black;
+    width: 100px;
+    height:100px;
+  margin: auto;
+     width:30%;  
+  display:inline-block;
   background-color: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-sizing: border-box;
-}
-
-/* Images */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Autre style */
-.fadi {
-  font-family: Arial, sans-serif;
+  }
+  .fadi{
+   font-family: Arial, sans-serif;
   text-align: center;
   padding: 50px;
-}
-
-/* Responsive : conservez l'alignement horizontal */
-@media screen and (max-width: 768px) {
-  .a, .b, .d, #de, #tr {
-    width: 30%;
-    margin-bottom: 10px;
   }
-
-  button {
-    width: auto;
-    padding: 10px 20px;
+  button{
+    font-size: 1.2rem;
+  margin: 10px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  
   }
-
-  .x {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-}
