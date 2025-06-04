@@ -127,3 +127,19 @@ margin: auto;
   color: white;
   
   }
+@media screen and (max-width: 730px){
+  body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .valider {
+    font-size: 60px;
+  }
+  input {
+    font-size: 60px;
+  }
+  .x {
+    font-size: 60px;
+  }
+}
